@@ -1,14 +1,11 @@
 <?php
 	// set your infomation.
 	$host		=	getenv("MYSQL_SERVICE_HOST");
-	$user		=	$_ENV["MYSQL_USER"];
-	$pass		=	$_ENV["MYSQL_PASSWORD"];
+	$user		=	getenv("MYSQL_USER");
+	$pass		=	getenv("MYSQL_PASSWORD");
 	$database	=	getenv("MYSQL_DATABASE");
 	
-	echo "Env variables:";
-	echo "**************";
-	echo ${MYSQL_SERVICE_HOST};
-	echo "\n";
+	echo "Env variables:\t \n";
 	
 	echo $host;
 	echo $user;
