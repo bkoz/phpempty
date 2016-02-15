@@ -20,6 +20,6 @@
 		}
 	}
 	else {
-		trigger_error ( mysql_error(), E_USER_ERROR );
+		echo " Error in DB creation.";
 	}
 ?>
