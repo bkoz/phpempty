@@ -23,7 +23,7 @@
 	$connect = @mysql_connect ($host, $user, $pass);
 
 if ( $connect ) {
-			ret = mysql_select_db ( $database );
+			@mysql_select_db ( $database );
 			if ( @mysql_query ( $sql ) )
 			{
 				echo 'Your new table was created successfully!';
