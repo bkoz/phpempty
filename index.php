@@ -8,8 +8,11 @@
 	echo 'Env variables: ';
 	
 	echo $host;
+	
 	echo $user;
+	
 	echo $pass;
+	
 	echo $database;
 	
 	$sql = 'CREATE TABLE `articles` (
