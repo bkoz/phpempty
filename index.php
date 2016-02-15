@@ -3,7 +3,7 @@
 	$host		=	$_ENV["MYSQL_SERVICE_HOST"];
 	$user		=	$_ENV["MYSQL_USER"];
 	$pass		=	$_ENV["MYSQL_PASSWORD"];
-	$database	=	$_ENV["MYSQL_DATMYSQL_SERVICE_HOST"];
+	$database	=	${MYSQL_DATABASE};
 	
 	echo "Env variables:";
 	echo "\n";
