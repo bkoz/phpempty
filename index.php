@@ -5,6 +5,7 @@
 	$pass		=	$_ENV["MYSQL_PASSWORD"];
 	$database	=	$_ENV["MYSQL_DATMYSQL_SERVICE_HOST"];
 	
+	echo "Env variables:";
 	echo $host;
 	echo $user;
 	echo $pass;
