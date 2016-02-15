@@ -6,11 +6,15 @@
 	$database	=	getenv("MYSQL_DATABASE");
 	
 	echo 'Env variables: ';
+	echo "<br>";
 	echo " MYSQL_SERVICE_HOST = ", $host;
+	echo "<br>";
 	echo " MYSQL_USER = ", $user;
+	echo "<br>";
 	echo " MYSQL_PASSWORD = ", $pass;
 	echo "<br>";
 	echo " MYSQL_DATABASE = ", $database;
+	echo "<br>";
 	
 	$sql = 'CREATE TABLE `articles` (
 		`ID` int( 11 ) NOT NULL AUTO_INCREMENT,
