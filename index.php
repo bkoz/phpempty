@@ -9,7 +9,6 @@
 	echo " MYSQL_SERVICE_HOST = ", $host;
 	echo " MYSQL_USER = ", $user;
 	echo " MYSQL_PASSWORD = ", $pass;
-	echo <br>;
 	echo " MYSQL_DATABASE = ", $database;
 	
 	$sql = 'CREATE TABLE `articles` (
