@@ -11,19 +11,19 @@
 	echo $user;
 	echo $pass;
 	echo $database;
+	
+	$sql = 'CREATE TABLE `articles` (
+		`ID` int( 11 ) NOT NULL AUTO_INCREMENT,
+		`article_title` VARCHAR( 255 ) NOT NULL,
+		`article_content` TEXT NOT NULL,
+		PRIMARY KEY ( `ID` )
+	       )';
 
 	// connect to the mysql database server.
 	$connect = @mysql_connect ($host, $user, $pass);
-	
-	if ( $connect )
-	{
-		// create the database.
-		if ( ! @mysql_query ( "CREATE DATABASE $database" ) )
-		{
-			die ( mysql_error() );
-		}
-		else {
-			mysql_select_db ( $database );
+
+if ( $connect ) {
+			ret = mysql_select_db ( $database );
 			if ( @mysql_query ( $sql ) )
 			{
 				echo 'Your new table was created successfully!';
@@ -32,8 +32,3 @@
 				die ( mysql_error() );
 			}
 		}
-	}
-	else {
-		echo " Error in DB creation.";
-	}
-?>
