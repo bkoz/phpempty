@@ -5,9 +5,9 @@
 	$pass		=	getenv("MYSQL_PASSWORD");
 	$database	=	getenv("MYSQL_DATABASE");
 	
-	echo "Env variables:\t \n";
+	echo "Env variables: ",  "\n";
 	
-	echo $host;
+	echo $host, "\n";
 	echo $user;
 	echo $pass;
 	echo $database;
@@ -22,7 +22,7 @@
 	// connect to the mysql database server.
 	$connect = @mysql_connect ($host, $user, $pass);
 
-if ( $connect ) {
+      if ( $connect ) {
 			@mysql_select_db ( $database );
 			if ( @mysql_query ( $sql ) )
 			{
@@ -31,4 +31,4 @@ if ( $connect ) {
 			else {
 				die ( mysql_error() );
 			}
-		}
+		       }
