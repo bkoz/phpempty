@@ -6,6 +6,7 @@
 	$database	=	${MYSQL_DATABASE};
 	
 	echo "Env variables:";
+	echo "**************";
 	echo ${MYSQL_SERVICE_HOST};
 	echo "\n";
 	
