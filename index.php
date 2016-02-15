@@ -9,13 +9,13 @@
 	
 	echo 'Env variables: ';
 	
-	echo $host;
+	echo "MYSQL_SERVICE_HOST: ", $host;
 	
-	echo $user;
+	echo "MYSQL_USER: ", $user;
 	
-	echo $pass;
+	echo "MYSQL_PASSWORD: ", $pass;
 	
-	echo $database;
+	echo "MYSQL_DATABASE: ", $database;
 	
 	$sql = 'CREATE TABLE `articles` (
 		`ID` int( 11 ) NOT NULL AUTO_INCREMENT,
