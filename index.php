@@ -5,7 +5,7 @@
 	$pass		=	getenv("MYSQL_PASSWORD");
 	$database	=	getenv("MYSQL_DATABASE");
 	
-	echo 'Env variables: ',  ''\n';
+	echo 'Env variables: ',  '\n';
 	
 	echo $host, '\n';
 	echo $user;
