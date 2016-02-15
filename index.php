@@ -1,6 +1,6 @@
 <?php
 	// set your infomation.
-	$host		=	$_ENV["MYSQL_SERVICE_HOST"];
+	$host		=	getenv("MYSQL_SERVICE_HOST");
 	$user		=	$_ENV["MYSQL_USER"];
 	$pass		=	$_ENV["MYSQL_PASSWORD"];
 	$database	=	getenv("MYSQL_DATABASE");
