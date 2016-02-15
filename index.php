@@ -5,17 +5,15 @@
 	$pass		=	getenv("MYSQL_PASSWORD");
 	$database	=	getenv("MYSQL_DATABASE");
 	
-	echo "This spans\nmultiple lines. The newlines will be\noutput as well.";
-	
 	echo 'Env variables: ';
 	
-	echo "MYSQL_SERVICE_HOST: ", $host;
+	echo " MYSQL_SERVICE_HOST: ", $host;
 	
-	echo "MYSQL_USER: ", $user;
+	echo " MYSQL_USER: ", $user;
 	
-	echo "MYSQL_PASSWORD: ", $pass;
+	echo " MYSQL_PASSWORD: ", $pass;
 	
-	echo "MYSQL_DATABASE: ", $database;
+	echo " MYSQL_DATABASE: ", $database;
 	
 	$sql = 'CREATE TABLE `articles` (
 		`ID` int( 11 ) NOT NULL AUTO_INCREMENT,
