@@ -5,6 +5,8 @@
 	$pass		=	getenv("MYSQL_PASSWORD");
 	$database	=	getenv("MYSQL_DATABASE");
 	
+	echo "This spans\nmultiple lines. The newlines will be\noutput as well.";
+	
 	echo 'Env variables: ';
 	
 	echo $host;
