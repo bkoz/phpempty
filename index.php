@@ -4,6 +4,11 @@
 	$user		=	$_ENV["MYSQL_USER"];
 	$pass		=	$_ENV["MYSQL_PASSWORD"];
 	$database	=	$_ENV["MYSQL_DATMYSQL_SERVICE_HOST"];
+	
+	echo $host;
+	echo $user;
+	echo $pass;
+	echo $database;
 
 	// connect to the mysql database server.
 	$connect = @mysql_connect ($host, $user, $pass);
