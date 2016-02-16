@@ -15,6 +15,8 @@
 	echo "<br>";
 	echo " MYSQL_DATABASE = ", $database;
 	echo "<br>";
+	echo "HOSTNAME: ", getenv("HOSTNAME");
+	echo "<br>";
 	
 	$sql = 'CREATE TABLE `articles` (
 		`ID` int( 11 ) NOT NULL AUTO_INCREMENT,
